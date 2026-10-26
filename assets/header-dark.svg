@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="270" viewBox="0 0 960 270" font-family="'Google Sans','Product Sans',Roboto,'Segoe UI',Helvetica,Arial,sans-serif">
+  <style>
+    .dot { animation: bounce 1.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes bounce { 0%,60%,100% { transform: translateY(0) } 30% { transform: translateY(-9px) } }
+    .rise { opacity: 0; animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
+    .blink { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0 } }
+  </style>
+  <defs>
+    <clipPath id="type"><rect x="104" y="188" height="40" width="0">
+      <animate attributeName="width" values="0;400;400;0;0" keyTimes="0;.45;.85;.95;1" dur="7s" repeatCount="indefinite"/>
+    </rect></clipPath>
+  </defs>
+  <rect x="0.5" y="0.5" width="959" height="269" rx="20" fill="#161B22" stroke="#30363D"/>
+  <circle class="dot" style="animation-delay:0.00s" cx="56" cy="54" r="6" fill="#8AB4F8"/><circle class="dot" style="animation-delay:0.15s" cx="76" cy="54" r="6" fill="#F28B82"/><circle class="dot" style="animation-delay:0.30s" cx="96" cy="54" r="6" fill="#FDD663"/><circle class="dot" style="animation-delay:0.45s" cx="116" cy="54" r="6" fill="#81C995"/>
+  <g class="rise" style="animation-delay:.05s">
+    <text x="48" y="122" font-size="40" font-weight="500" fill="#E8EAED">Hi, I'm Mohsin Ali Masi</text>
+  </g>
+  <g class="rise" style="animation-delay:.18s">
+    <text x="48" y="156" font-size="18" fill="#9AA0A6">Software Developer at <tspan fill="#E8EAED" font-weight="500">Odoo</tspan>  ·  Backend  ·  AI  ·  Gandhinagar, India</text>
+  </g>
+  <g class="rise" style="animation-delay:.28s">
+    <rect x="48" y="184" width="548" height="48" rx="24" fill="#161B22" stroke="#30363D"/>
+    <g fill="none" stroke="#9AA0A6" stroke-width="2.2" stroke-linecap="round">
+      <circle cx="76" cy="206" r="7"/><path d="M81 211l6 6"/>
+    </g>
+    <g clip-path="url(#type)">
+      <text x="104" y="214" font-size="17" fill="#E8EAED" textLength="400" lengthAdjust="spacingAndGlyphs">python  fastapi  odoo  ai agents  llm workflows</text>
+    </g>
+    <rect class="blink" x="104" y="196" width="2" height="22" fill="#8AB4F8">
+      <animateTransform attributeName="transform" type="translate" values="0 0;403 0;403 0;0 0;0 0" keyTimes="0;.45;.85;.95;1" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="560" cy="208" r="4" fill="#8AB4F8"/><circle cx="572" cy="208" r="4" fill="#F28B82"/>
+  </g>
+  <g class="rise" style="animation-delay:0.35s"><rect x="640" y="40" width="146" height="98" rx="14" fill="#202124" stroke="#30363D"/><rect x="658" y="58" width="22" height="4" rx="2" fill="#8AB4F8"/><text x="658" y="100" font-size="32" font-weight="500" fill="#8AB4F8">3+</text><text x="658" y="122" font-size="13" fill="#9AA0A6">years experience</text></g><g class="rise" style="animation-delay:0.47s"><rect x="800" y="40" width="146" height="98" rx="14" fill="#202124" stroke="#30363D"/><rect x="818" y="58" width="22" height="4" rx="2" fill="#F28B82"/><text x="818" y="100" font-size="32" font-weight="500" fill="#F28B82">200+</text><text x="818" y="122" font-size="13" fill="#9AA0A6">pull requests</text></g><g class="rise" style="animation-delay:0.59s"><rect x="640" y="152" width="146" height="98" rx="14" fill="#202124" stroke="#30363D"/><rect x="658" y="170" width="22" height="4" rx="2" fill="#FDD663"/><text x="658" y="212" font-size="32" font-weight="500" fill="#FDD663">50+</text><text x="658" y="234" font-size="13" fill="#9AA0A6">backend features</text></g><g class="rise" style="animation-delay:0.71s"><rect x="800" y="152" width="146" height="98" rx="14" fill="#202124" stroke="#30363D"/><rect x="818" y="170" width="22" height="4" rx="2" fill="#81C995"/><text x="818" y="212" font-size="32" font-weight="500" fill="#81C995">5+</text><text x="818" y="234" font-size="13" fill="#9AA0A6">countries localized</text></g>
+</svg>
